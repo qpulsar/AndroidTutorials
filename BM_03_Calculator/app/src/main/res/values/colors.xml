@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="buton_text">#4b4b4b</color>
+    <color name="clr_back">#ff4d4d</color>
+    <color name="op_back">#ffb8b8</color>
+    <color name="eq_back">#3ae374</color>
+</resources>

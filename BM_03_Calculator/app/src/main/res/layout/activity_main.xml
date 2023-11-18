@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/electrolize"
+            android:gravity="right"
+            android:text="888888888888"
+            android:textColor="@color/design_default_color_shadow_dark"
+            android:textSize="42sp" />
+
+        <EditText
+            android:id="@+id/et_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|center_vertical"
+            android:ems="10"
+            android:fontFamily="@font/electrolize"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="42sp" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_0"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="0" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_dot"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="."
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_0" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_1"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="1"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_0"
+        app:layout_constraintStart_toStartOf="@+id/btn_0" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_2"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="2"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_1"
+        app:layout_constraintStart_toEndOf="@+id/btn_1" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_3"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="3"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_2"
+        app:layout_constraintStart_toEndOf="@+id/btn_2" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_4"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="4"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_1"
+        app:layout_constraintStart_toStartOf="@+id/btn_1" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_6"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="6"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_2"
+        app:layout_constraintStart_toEndOf="@+id/btn_5" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_5"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="5"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_1"
+        app:layout_constraintStart_toEndOf="@+id/btn_4" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_8"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="8"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_4"
+        app:layout_constraintStart_toEndOf="@+id/btn_7" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_7"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="7"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_4"
+        app:layout_constraintStart_toStartOf="@+id/btn_4" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_9"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="9"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_4"
+        app:layout_constraintStart_toEndOf="@+id/btn_8" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_c"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="C"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_7"
+        app:layout_constraintStart_toEndOf="@+id/btn_7"
+        app:layout_constraintStart_toStartOf="@+id/btn_7"
+        app:neumorph_backgroundColor="@color/clr_back" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_multiply"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="*"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_div"
+        app:layout_constraintStart_toEndOf="@+id/btn_div"
+        app:neumorph_backgroundColor="@color/op_back" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_minus"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="-"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_div"
+        app:layout_constraintStart_toEndOf="@+id/btn_multiply"
+        app:layout_constraintTop_toTopOf="@+id/btn_multiply"
+        app:neumorph_backgroundColor="@color/op_back" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_plus"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="+"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_multiply"
+        app:layout_constraintTop_toTopOf="@+id/btn_9"
+        app:neumorph_backgroundColor="@color/op_back" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_equal"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="="
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_dot"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus"
+        app:neumorph_backgroundColor="@color/eq_back" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_div"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="/"
+        android:textColor="@color/buton_text"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_c"
+        app:layout_constraintStart_toEndOf="@+id/btn_c"
+        app:neumorph_backgroundColor="@color/op_back" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView">
+
+        <TextView
+            android:id="@+id/tv_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
